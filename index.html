@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Sorting</title>
+  </head>
+  <script>
+    const sort = [12, 2, 23, 34, 5, 100, 500, 4, 8, 16, 7, 88, 50, 3];
+    for (i = 0; i < sort.length; i++) {
+      for (j = 0; j < sort.length; j++) {
+        if (sort[j] > sort[j+1]) {
+          let temp = sort[j];
+          sort[j] = sort[j + 1];
+          sort[j + 1] = temp;
+        }
+      }
+    }
+    console.log(sort);
+  </script>
+  <body>
+    <h1>Sorting Array</h1>
+  </body>
+</html>
